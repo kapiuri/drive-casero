@@ -1,0 +1,46 @@
+/* Estilo General para la Página de Login */
+body {
+    font-family: Arial, sans-serif; /* Familia de fuentes del cuerpo */
+    background-color: #121212; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    display: flex; /* Uso de flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente el formulario */
+    align-items: center; /* Centra verticalmente el formulario */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Sin margen en el cuerpo */
+}
+
+form {
+    background-color: #1f1f1f; /* Fondo del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados del formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del formulario */
+    max-width: 400px; /* Ancho máximo del formulario */
+    width: 100%; /* Ancho completo del formulario */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 94.5%; /* Ancho de los campos de entrada */
+    padding: 10px; /* Espaciado interno de los campos de entrada */
+    margin: 10px 0; /* Espacio arriba y abajo de los campos de entrada */
+    border: 1px solid #333; /* Borde de los campos de entrada */
+    border-radius: 4px; /* Bordes redondeados de los campos de entrada */
+    background-color: #2c2c2c; /* Fondo de los campos de entrada */
+    color: #e0e0e0; /* Color del texto de entrada */
+}
+
+input[type="submit"] {
+    width: 100%; /* Ancho completo del botón de envío */
+    padding: 10px; /* Espaciado interno del botón de envío */
+    border: none; /* Sin borde en el botón de envío */
+    border-radius: 4px; /* Bordes redondeados del botón de envío */
+    background-color: #ff5722; /* Color de fondo del botón de envío */
+    color: #fff; /* Color del texto del botón de envío */
+    font-size: 16px; /* Tamaño de la fuente del botón de envío */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+input[type="submit"]:hover {
+    background-color: #e64a19; /* Color del botón de envío en hover */
+}

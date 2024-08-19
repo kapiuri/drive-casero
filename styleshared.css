@@ -1,0 +1,168 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif; /* Familia de fuentes del cuerpo */
+    color: #f0f0f0; /* Color del texto */
+    background-color: #121212; /* Fondo oscuro */
+    margin: 0; /* Sin margen en el cuerpo */
+    padding: 0; /* Sin padding en el cuerpo */
+}
+
+/* Estilos del Encabezado */
+.header {
+    background-color: #1e1e1e; /* Fondo del encabezado */
+    color: #f0f0f0; /* Color del texto en el encabezado */
+    padding: 20px; /* Espaciado interno del encabezado */
+    text-align: center; /* Alineación del texto en el centro */
+    border-bottom: 2px solid #333; /* Borde inferior del encabezado */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Sombra del encabezado */
+}
+
+.header h1 {
+    margin: 0; /* Sin margen en el encabezado */
+    font-size: 2em; /* Tamaño de fuente del encabezado */
+    font-weight: bold; /* Peso de fuente negrita */
+}
+
+/* Estilos de la Navegación */
+.nav {
+    background-color: #1e1e1e; /* Fondo de la barra de navegación */
+    padding: 10px; /* Espaciado interno de la barra de navegación */
+    border-bottom: 1px solid #333; /* Borde inferior de la barra de navegación */
+    text-align: center; /* Alineación del texto en el centro */
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2); /* Sombra de la barra de navegación */
+}
+
+.nav-link {
+    color: #f0f0f0; /* Color del texto de los enlaces de navegación */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    margin: 0 15px; /* Margen horizontal entre los enlaces */
+    font-size: 1.1em; /* Tamaño de fuente de los enlaces */
+    padding: 10px; /* Espaciado interno de los enlaces */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Transiciones para efectos en hover */
+}
+
+.nav-link:hover {
+    background-color: #333; /* Fondo de los enlaces en hover */
+    color: #ff5722; /* Color del texto de los enlaces en hover */
+    transform: scale(1.05); /* Efecto de escalado en hover */
+}
+
+/* Estilos del Contenido Principal */
+.main-content {
+    padding: 20px; /* Espaciado interno del contenido principal */
+    max-width: 1200px; /* Ancho máximo del contenido principal */
+    margin: 0 auto; /* Centra el contenido principal horizontalmente */
+}
+
+/* Estilos de Mensajes y Errores */
+.message, .error {
+    text-align: center; /* Alineación del texto en el centro */
+    margin: 10px 0; /* Margen superior e inferior de los mensajes */
+    padding: 10px; /* Espaciado interno de los mensajes */
+    border-radius: 5px; /* Bordes redondeados de los mensajes */
+    font-weight: bold; /* Peso de fuente negrita */
+}
+
+.message {
+    color: #ff5722; /* Color del texto del mensaje */
+    background-color: rgba(255, 87, 34, 0.1); /* Fondo del mensaje con opacidad */
+}
+
+.error {
+    color: #ff5722; /* Color del texto del error */
+    background-color: rgba(255, 87, 34, 0.1); /* Fondo del error con opacidad */
+}
+
+/* Estilos de los Ítems de Archivo */
+.file-item {
+    background-color: #1e1e1e; /* Fondo del ítem de archivo */
+    padding: 15px; /* Espaciado interno del ítem de archivo */
+    margin-bottom: 15px; /* Margen inferior entre los ítems de archivo */
+    border-radius: 5px; /* Bordes redondeados del ítem de archivo */
+    border: 1px solid #333; /* Borde del ítem de archivo */
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2); /* Sombra del ítem de archivo */
+    display: flex; /* Uso de flexbox para alinear elementos dentro del ítem de archivo */
+    align-items: center; /* Alineación vertical de los elementos dentro del ítem */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones para efectos en hover */
+}
+
+.file-item:hover {
+    background-color: #2a2a2a; /* Fondo del ítem de archivo en hover */
+    transform: scale(1.02); /* Efecto de escalado en hover */
+}
+
+/* Estilos del Enlace de Archivo */
+.file-link {
+    color: #ff5722; /* Color del texto del enlace de archivo */
+    text-decoration: none; /* Sin subrayado en el enlace de archivo */
+    margin-left: 10px; /* Margen izquierdo del enlace de archivo */
+    font-weight: bold; /* Peso de fuente negrita en el enlace de archivo */
+    flex-grow: 1; /* El enlace ocupa el espacio restante en el contenedor flex */
+}
+
+.file-link:hover {
+    text-decoration: underline; /* Subrayado del enlace en hover */
+    color: #ff8a50; /* Color del texto del enlace en hover */
+}
+
+/* Estilos del Ícono de Archivo */
+.file-icon {
+    font-size: 20px; /* Tamaño de fuente del ícono de archivo */
+    margin-right: 10px; /* Margen derecho del ícono de archivo */
+}
+
+/* Estilos para Mover a la Papelera */
+.move-to-trash {
+    color: #ff5722; /* Color del texto del botón para mover a la papelera */
+    text-decoration: none; /* Sin subrayado en el botón para mover a la papelera */
+    background-color: #333; /* Fondo del botón para mover a la papelera */
+    padding: 5px 10px; /* Espaciado interno del botón para mover a la papelera */
+    border-radius: 5px; /* Bordes redondeados del botón para mover a la papelera */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para efectos en hover */
+}
+
+.move-to-trash:hover {
+    background-color: #ff5722; /* Fondo del botón en hover */
+    color: #fff; /* Color del texto del botón en hover */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilos del Pie de Página */
+.footer {
+    background-color: #1e1e1e; /* Fondo del pie de página */
+    color: #f0f0f0; /* Color del texto en el pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+    text-align: center; /* Alineación del texto en el centro */
+    border-top: 1px solid #333; /* Borde superior del pie de página */
+    position: fixed; /* Posiciona el pie de página de manera fija */
+    bottom: 0; /* Alineación en la parte inferior */
+    width: 100%; /* Ancho completo del pie de página */
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.2); /* Sombra del pie de página */
+}
+
+.footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido del pie de página */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.footer-nav {
+    margin-bottom: 10px; /* Margen inferior en la sección de navegación del pie de página */
+}
+
+.footer-link {
+    color: #ff5722; /* Color del texto de los enlaces del pie de página */
+    text-decoration: none; /* Sin subrayado en los enlaces del pie de página */
+    margin: 0 10px; /* Margen horizontal entre los enlaces del pie de página */
+    font-size: 1em; /* Tamaño de fuente de los enlaces del pie de página */
+    font-weight: bold; /* Peso de fuente negrita en los enlaces del pie de página */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Subrayado de los enlaces en hover */
+    color: #ff8a50; /* Color del texto de los enlaces en hover */
+}
+
+.footer-text {
+    margin: 0; /* Sin margen en el texto del pie de página */
+    font-size: 0.9em; /* Tamaño de fuente del texto del pie de página */
+}

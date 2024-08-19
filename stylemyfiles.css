@@ -1,0 +1,181 @@
+/* Estilo General */
+body {
+    font-family: Arial, sans-serif; /* Familia de fuentes del cuerpo */
+    color: #f0f0f0; /* Color del texto */
+    background-color: #121212; /* Fondo oscuro */
+    margin: 0; /* Sin margen en el cuerpo */
+    padding: 0; /* Sin relleno en el cuerpo */
+}
+
+/* Estilo del Encabezado */
+.header {
+    background-color: #1e1e1e; /* Fondo del encabezado */
+    color: #f0f0f0; /* Color del texto del encabezado */
+    padding: 20px; /* Espaciado interno del encabezado */
+    text-align: center; /* Alineación del texto en el centro */
+    border-bottom: 2px solid #333; /* Borde inferior del encabezado */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Sombra del encabezado */
+}
+
+.header h1 {
+    margin: 0; /* Sin margen en el encabezado */
+    font-size: 2em; /* Tamaño de la fuente del encabezado */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+/* Estilo de la Información del Usuario */
+.user-info {
+    margin-top: 10px; /* Espacio arriba de la información del usuario */
+}
+
+/* Estilo de los Enlaces de Usuario */
+.user-link {
+    color: #ff5722; /* Color del enlace del usuario */
+    text-decoration: none; /* Sin subrayado en el enlace */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+.user-link:hover {
+    text-decoration: underline; /* Subrayado del enlace al pasar el cursor */
+    color: #ff8a50; /* Color del enlace al pasar el cursor */
+}
+
+/* Estilo de la Navegación */
+.nav {
+    background-color: #1e1e1e; /* Fondo de la barra de navegación */
+    padding: 10px; /* Espaciado interno de la barra de navegación */
+    border-bottom: 1px solid #333; /* Borde inferior de la barra de navegación */
+    text-align: center; /* Alineación del texto en el centro */
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2); /* Sombra de la barra de navegación */
+}
+
+.nav-link {
+    color: #f0f0f0; /* Color del enlace de navegación */
+    text-decoration: none; /* Sin subrayado en el enlace */
+    margin: 0 15px; /* Espacio a los lados del enlace */
+    font-size: 1.1em; /* Tamaño de la fuente del enlace */
+    padding: 10px; /* Espaciado interno del enlace */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Transiciones para fondo, color y transformación */
+}
+
+.nav-link:hover {
+    background-color: #333; /* Fondo del enlace al pasar el cursor */
+    color: #ff5722; /* Color del texto del enlace al pasar el cursor */
+    transform: scale(1.05); /* Escala del enlace al pasar el cursor */
+}
+
+/* Estilo del Contenido Principal */
+.main-content {
+    padding: 20px; /* Espaciado interno del contenido principal */
+    max-width: 1200px; /* Ancho máximo del contenido principal */
+    margin: 0 auto; /* Centrar el contenido principal */
+}
+
+/* Estilo de Mensajes y Errores */
+.message, .error {
+    text-align: center; /* Alineación del texto en el centro */
+    margin: 10px 0; /* Espacio arriba y abajo del mensaje/error */
+    padding: 10px; /* Espaciado interno del mensaje/error */
+    border-radius: 5px; /* Bordes redondeados del mensaje/error */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+/* Estilo de los Errores */
+.error {
+    color: #ff5722; /* Color del texto de error */
+    background-color: rgba(255, 87, 34, 0.1); /* Fondo del error con opacidad */
+}
+
+/* Estilo de los Elementos de Archivo */
+.file-item {
+    background-color: #1e1e1e; /* Fondo del elemento de archivo */
+    padding: 15px; /* Espaciado interno del elemento de archivo */
+    margin-bottom: 15px; /* Espacio debajo del elemento de archivo */
+    border-radius: 5px; /* Bordes redondeados del elemento de archivo */
+    border: 1px solid #333; /* Borde del elemento de archivo */
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2); /* Sombra del elemento de archivo */
+    display: flex; /* Muestra el elemento de archivo como flex */
+    align-items: center; /* Alineación vertical de los elementos flex */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones para fondo y transformación */
+}
+
+.file-item:hover {
+    background-color: #2a2a2a; /* Fondo del elemento de archivo al pasar el cursor */
+    transform: scale(1.02); /* Escala del elemento de archivo al pasar el cursor */
+}
+
+/* Estilo del Icono de Archivo */
+.file-icon {
+    font-size: 24px; /* Tamaño de la fuente del icono de archivo */
+    margin-right: 10px; /* Espacio a la derecha del icono de archivo */
+}
+
+/* Estilo del Enlace del Archivo */
+.file-link {
+    color: #ff5722; /* Color del enlace del archivo */
+    text-decoration: none; /* Sin subrayado en el enlace */
+    margin-left: 10px; /* Espacio a la izquierda del enlace del archivo */
+    font-weight: bold; /* Fuente en negrita */
+    flex-grow: 1; /* El enlace ocupa el espacio restante */
+}
+
+.file-link:hover {
+    text-decoration: underline; /* Subrayado del enlace al pasar el cursor */
+    color: #ff8a50; /* Color del enlace al pasar el cursor */
+}
+
+/* Estilo de Mover a la Papelera */
+.move-to-trash {
+    color: #ff5722; /* Color del texto del enlace de mover a la papelera */
+    text-decoration: none; /* Sin subrayado en el enlace */
+    background-color: #333; /* Fondo del enlace de mover a la papelera */
+    padding: 5px 10px; /* Espaciado interno del enlace */
+    border-radius: 5px; /* Bordes redondeados del enlace */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para fondo y color */
+}
+
+.move-to-trash:hover {
+    background-color: #ff5722; /* Fondo del enlace al pasar el cursor */
+    color: #fff; /* Color del texto del enlace al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+}
+
+/* Estilo del Pie de Página */
+.footer {
+    background-color: #1e1e1e; /* Fondo del pie de página */
+    color: #f0f0f0; /* Color del texto del pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+    text-align: center; /* Alineación del texto en el centro */
+    border-top: 1px solid #333; /* Borde superior del pie de página */
+    position: fixed; /* Posición fija en la parte inferior */
+    bottom: 0; /* Pegado al fondo */
+    width: 100%; /* Ancho completo del pie de página */
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.2); /* Sombra del pie de página */
+}
+
+.footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido del pie de página */
+    margin: 0 auto; /* Centrar el contenido del pie de página */
+}
+
+.footer-nav {
+    margin-bottom: 10px; /* Espacio debajo de la navegación del pie de página */
+}
+
+.footer-link {
+    color: #ff5722; /* Color del enlace del pie de página */
+    text-decoration: none; /* Sin subrayado en el enlace */
+    margin: 0 10px; /* Espacio a los lados del enlace */
+    font-size: 1em; /* Tamaño de la fuente del enlace */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Subrayado del enlace al pasar el cursor */
+    color: #ff8a50; /* Color del enlace al pasar el cursor */
+}
+
+.footer-text {
+    margin: 0; /* Sin margen en el texto del pie de página */
+    font-size: 0.9em; /* Tamaño de la fuente del texto del pie de página */
+}

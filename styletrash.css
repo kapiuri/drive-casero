@@ -1,0 +1,219 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif; /* Familia de fuentes del cuerpo */
+    color: #f0f0f0; /* Color del texto */
+    background-color: #121212; /* Fondo oscuro */
+    margin: 0; /* Sin margen en el cuerpo */
+    padding: 0; /* Sin padding en el cuerpo */
+}
+
+/* Estilos del Encabezado */
+.header {
+    background-color: #1e1e1e; /* Fondo del encabezado */
+    color: #f0f0f0; /* Color del texto en el encabezado */
+    padding: 20px; /* Espaciado interno del encabezado */
+    text-align: center; /* Alineación del texto en el centro */
+    border-bottom: 2px solid #333; /* Borde inferior del encabezado */
+}
+
+.header h1 {
+    margin: 0; /* Sin margen en el encabezado */
+    font-size: 2em; /* Tamaño de fuente del encabezado */
+}
+
+/* Estilos de Información del Usuario */
+.user-info {
+    margin-top: 10px; /* Margen superior de la información del usuario */
+}
+
+.user-link {
+    color: #ff5722; /* Color del enlace del usuario */
+    text-decoration: none; /* Sin subrayado en el enlace del usuario */
+}
+
+.user-link:hover {
+    text-decoration: underline; /* Subrayado del enlace en hover */
+}
+
+/* Estilos de la Navegación */
+.nav {
+    background-color: #1e1e1e; /* Fondo de la barra de navegación */
+    padding: 10px; /* Espaciado interno de la barra de navegación */
+    border-bottom: 1px solid #333; /* Borde inferior de la barra de navegación */
+    text-align: center; /* Alineación del texto en el centro */
+}
+
+.nav-link {
+    color: #f0f0f0; /* Color del texto de los enlaces de navegación */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    margin: 0 15px; /* Margen horizontal entre los enlaces */
+    font-size: 1.1em; /* Tamaño de fuente de los enlaces */
+    padding: 10px; /* Espaciado interno de los enlaces */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para efectos en hover */
+}
+
+.nav-link:hover {
+    background-color: #333; /* Fondo de los enlaces en hover */
+    color: #ff5722; /* Color del texto de los enlaces en hover */
+}
+
+/* Estilos del Contenido Principal */
+.main-content {
+    padding: 20px; /* Espaciado interno del contenido principal */
+}
+
+/* Estilos de Mensajes y Errores */
+.message {
+    color: #ff5722; /* Color del texto de los mensajes */
+    text-align: center; /* Alineación del texto en el centro */
+    margin: 10px 0; /* Margen superior e inferior de los mensajes */
+}
+
+.error {
+    color: #ff5722; /* Color del texto de los errores */
+    text-align: center; /* Alineación del texto en el centro */
+    margin: 10px 0; /* Margen superior e inferior de los errores */
+}
+
+/* Estilos de los Ítems de Archivo */
+.file-item {
+    background-color: #1e1e1e; /* Fondo del ítem de archivo */
+    padding: 10px; /* Espaciado interno del ítem de archivo */
+    margin-bottom: 10px; /* Margen inferior entre los ítems de archivo */
+    border-radius: 5px; /* Bordes redondeados del ítem de archivo */
+    border: 1px solid #333; /* Borde del ítem de archivo */
+    display: flex; /* Uso de flexbox para alinear elementos dentro del ítem */
+    align-items: center; /* Alineación vertical de los elementos dentro del ítem */
+    transition: background-color 0.3s; /* Transición para el fondo en hover */
+}
+
+.file-item:hover {
+    background-color: #333; /* Fondo del ítem de archivo en hover */
+}
+
+.file-link {
+    color: #ff5722; /* Color del texto del enlace de archivo */
+    text-decoration: none; /* Sin subrayado en el enlace de archivo */
+    margin-left: 10px; /* Margen izquierdo del enlace de archivo */
+    flex-grow: 1; /* El enlace ocupa el espacio restante en el contenedor flex */
+}
+
+.file-link:hover {
+    text-decoration: underline; /* Subrayado del enlace en hover */
+}
+
+.file-icon {
+    font-size: 20px; /* Tamaño de fuente del ícono de archivo */
+    margin-right: 10px; /* Margen derecho del ícono de archivo */
+}
+
+/* Estilos para Eliminar y Restaurar Ítems */
+.delete-link {
+    color: #ff5722; /* Color del texto del enlace para eliminar */
+    text-decoration: none; /* Sin subrayado en el enlace para eliminar */
+    background-color: #333; /* Fondo del enlace para eliminar */
+    padding: 5px 10px; /* Espaciado interno del enlace para eliminar */
+    border-radius: 5px; /* Bordes redondeados del enlace para eliminar */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para efectos en hover */
+}
+
+.delete-link:hover {
+    background-color: #ff5722; /* Fondo del enlace en hover */
+    color: #fff; /* Color del texto del enlace en hover */
+}
+
+.restore-link {
+    color: #ff5722; /* Color del texto del enlace para restaurar */
+    text-decoration: none; /* Sin subrayado en el enlace para restaurar */
+    background-color: #333; /* Fondo del enlace para restaurar */
+    padding: 5px 10px; /* Espaciado interno del enlace para restaurar */
+    border-radius: 5px; /* Bordes redondeados del enlace para restaurar */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para efectos en hover */
+}
+
+/* Estilos de Botones */
+button {
+    background-color: #ff5722; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde en el botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    font-size: 1em; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor a puntero sobre el botón */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones para efectos en hover y clic */
+    margin-top: 20px; /* Margen superior del botón */
+    display: block; /* El botón ocupa el ancho completo del contenedor */
+    margin-left: auto; /* Centra horizontalmente el botón */
+    margin-right: auto; /* Centra horizontalmente el botón */
+}
+
+button:hover {
+    background-color: #e64a19; /* Fondo del botón en hover */
+    transform: translateY(-2px); /* Efecto de desplazamiento en hover */
+}
+
+button:active {
+    background-color: #d84315; /* Fondo del botón en clic */
+    transform: translateY(0); /* Restablece el desplazamiento al clic */
+}
+
+/* Estilos del Pie de Página */
+.footer {
+    background-color: #1e1e1e; /* Fondo del pie de página */
+    color: #f0f0f0; /* Color del texto en el pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+    text-align: center; /* Alineación del texto en el centro */
+    border-top: 1px solid #333; /* Borde superior del pie de página */
+    position: fixed; /* Posiciona el pie de página de manera fija */
+    bottom: 0; /* Alineación en la parte inferior */
+    width: 100%; /* Ancho completo del pie de página */
+}
+
+.footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido del pie de página */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.footer-nav {
+    margin-bottom: 10px; /* Margen inferior en la sección de navegación del pie de página */
+}
+
+.footer-link {
+    color: #ff5722; /* Color del texto de los enlaces del pie de página */
+    text-decoration: none; /* Sin subrayado en los enlaces del pie de página */
+    margin: 0 10px; /* Margen horizontal entre los enlaces del pie de página */
+    font-size: 1em; /* Tamaño de fuente de los enlaces del pie de página */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Subrayado de los enlaces en hover */
+}
+
+.footer-text {
+    margin: 0; /* Sin margen en el texto del pie de página */
+    font-size: 0.9em; /* Tamaño de fuente del texto del pie de página */
+}
+
+/* Estilo para el botón de "Eliminar todo" */
+.delete-all-button {
+    background-color: #ff3333; /* Color de fondo del botón "Eliminar todo" */
+    color: #fff; /* Color del texto del botón "Eliminar todo" */
+    border: none; /* Sin borde en el botón "Eliminar todo" */
+    padding: 12px 25px; /* Espaciado interno del botón "Eliminar todo" */
+    border-radius: 8px; /* Bordes redondeados del botón "Eliminar todo" */
+    font-size: 1.2em; /* Tamaño de fuente del botón "Eliminar todo" */
+    cursor: pointer; /* Cambia el cursor a puntero sobre el botón "Eliminar todo" */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones para efectos en hover y clic */
+    margin: 20px auto; /* Margen vertical del botón "Eliminar todo" */
+    display: block; /* El botón ocupa el ancho completo del contenedor */
+}
+
+.delete-all-button:hover {
+    background-color: #cc0000; /* Fondo del botón "Eliminar todo" en hover */
+    transform: translateY(-3px); /* Efecto de desplazamiento en hover */
+}
+
+.delete-all-button:active {
+    background-color: #990000; /* Fondo del botón "Eliminar todo" en clic */
+    transform: translateY(0); /* Restablece el desplazamiento al clic */
+}
